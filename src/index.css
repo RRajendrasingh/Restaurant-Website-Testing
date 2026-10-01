@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-punch: 'Bebas Neue', 'Oswald', sans-serif;
+  }
+  
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0D0D0E;
+    color: #F3F4F6;
+    overflow-x: hidden;
+  }
+}
+
+.font-display-punch {
+  font-family: 'Bebas Neue', 'Oswald', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.font-syne-bold {
+  font-family: 'Syne', sans-serif;
+}
+
+/* Speckled confetti fill effect for the SALAD LEFT headline */
+.text-confetti-mask {
+  background-image: 
+    radial-gradient(circle at 10% 20%, #ff595e 1.5px, transparent 1.5px),
+    radial-gradient(circle at 80% 40%, #1982c4 1.5px, transparent 1.5px),
+    radial-gradient(circle at 40% 70%, #ffca3a 2px, transparent 2px),
+    radial-gradient(circle at 90% 80%, #8ac926 1.8px, transparent 1.8px),
+    radial-gradient(circle at 25% 60%, #6a4c93 1.5px, transparent 1.5px),
+    radial-gradient(circle at 60% 15%, #ff595e 1.8px, transparent 1.8px),
+    radial-gradient(circle at 75% 85%, #ffca3a 2.2px, transparent 2.2px),
+    linear-gradient(to bottom, #ffffff, #f0f0f0);
+  background-size: 80px 80px, 90px 90px, 70px 70px, 85px 85px, 95px 95px, 110px 110px, 100px 100px, 100% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D0E;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F5A623;
+}

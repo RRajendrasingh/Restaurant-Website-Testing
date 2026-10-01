@@ -1,0 +1,6 @@
+{
+  "name": "AURA – Fine Dining & Tasting Room",
+  "description": "Experience modern fine dining with seasonal multi-course tasting menus, wine cellar pairings, and seamless table reservations by phone.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
